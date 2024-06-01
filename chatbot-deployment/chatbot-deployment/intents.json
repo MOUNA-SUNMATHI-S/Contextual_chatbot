@@ -1,0 +1,758 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [  
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+
+    {
+      "tag": "nothing",
+      "patterns": ["'"],
+      "responses": [
+        "Sorry, I don't understand..."
+      ]
+    },
+
+
+    {
+      "tag": "name",
+      "patterns":  [
+        "name",
+        "your name!"
+        ],
+        
+      "responses": [
+        "I'm BitBot, how can i assist you?"
+      ]
+    },
+
+    {
+      "tag": "help",
+      "patterns":  [
+        "help",
+        "i need a help!",
+        "can you give me a information?"
+        ],
+        
+      "responses": [
+        "Of course, I'm here to help! What do you need assistance with?"
+      ]
+    },
+
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "oops",
+      "patterns": [
+        "oops",
+        "Object-Oriented Programming"
+      ],
+      "responses": [
+        
+        "Object-Oriented Programming (OOP) is a programming paradigm that organizes code into reusable, self-contained units called objects, each encapsulating data and behavior. It promotes modular and structured development by modeling real-world entities as objects with defined properties and methods."
+        
+      ]
+    },
+    {
+      "tag": "class",
+      "patterns": [
+        "Class"
+        
+      ],
+      "responses": [
+        "In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods). The user-defined objects are created using the class keyword."
+      
+      ]
+    },
+    {
+      "tag": "oop_concepts",
+      "patterns": [
+        "main concepts of OOP",
+        "OOP concepts"
+      ],
+      "responses": [
+        "OOP has several key concepts, including: encapsulation, inheritance, and polymorphism.",
+        "The main principles of OOP are encapsulation, inheritance, and polymorphism."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns":  [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+        ],
+        
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "principles of oops",
+       "patterns": [
+        "fundamental principles of oops",
+        "mention the solid principles"
+       ],
+       "responses": [
+        "Encapsulation, Inheritance, Abstraction, and Polymorphism "
+       ]
+    },
+    {
+      "tag": "inheritance",
+       "patterns": [
+        "Inheritance"
+       ],
+       "responses": [
+        "Inheritance is a fundamental concept in object-oriented programming where a new class inherits attributes and behaviors from an existing class, allowing code reuse and hierarchy in class relationships."
+       ]
+    },
+    {
+      "tag": "abstraction",
+       "patterns": [
+        " Abstraction"
+       ],
+       "responses": [
+        "Abstraction is a concept in programming where complex details are hidden and only essential features are exposed, simplifying interactions. "
+       ]
+    },
+    
+    {
+      "tag": "abstraction",
+       "patterns": [
+        "why  Abstraction"
+       ],
+       "responses": [
+        "Abstraction is used to hide background details or any unnecessary implementation about the data so that users only see the required information. "
+       ]
+    },
+    
+    {
+      "tag": "polymorphism",
+       "patterns": [
+        " polymorphism",
+        " polymorphism"
+       ],
+       "responses": [
+        "Polymorphism is a principle in object-oriented programming where objects of different classes can be treated as instances of a common superclass, allowing them to be used interchangeably based on shared methods and behaviors."
+       ]
+    },
+    {
+      "tag": "Encapsulation",
+       "patterns": [
+        " Encapsulation",
+        " Encapsulation"
+       ],
+       "responses": [
+        "Encapsulation is an object-oriented programming principle that involves bundling data and methods that operate on the data into a single unit, protecting data integrity and controlling access through well-defined interfaces."
+       ]
+    },
+    {
+      "tag": "class and object",
+       "patterns": [
+        " class and an object in OOP",
+        " difference between a class and an object."
+       ],
+       "responses": [
+        " Classes define the structure and behavior, while objects are instances that hold specific data and can perform actions defined by the class. ."
+       ]
+
+    },
+    {
+    
+      "tag": "eg for class",
+       "patterns": [
+        "class example",
+        "give the example for class."
+       ],
+       "responses": [
+        " A class ,'Car' may define attributes like 'color' and 'model' and methods like 'start_engine' and 'stop_engine'. "
+       ]
+      },
+      {
+    
+        "tag": "object",
+         "patterns": [
+          "object",
+          "object."
+         ],
+         "responses": [
+          "An object is an instance of a class. A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class."
+         ]
+     },
+      {
+    
+        "tag": "eg for object",
+         "patterns": [
+          "object example",
+          "give the example for object."
+         ],
+         "responses": [
+          "The object 'myCar' would be a specific car with its own color and model and it can call methods like 'start_engine' and 'stop_engine' on itself."
+         ]
+     },
+     
+     {
+    
+      "tag": "eg for class and object",
+       "patterns": [
+        " class and object example",
+        "give the example for  class and object."
+       ],
+       "responses": [
+        " A class , 'Car' may define attributes like 'color' and 'model' and methods like 'start_engine' and 'stop_engine'. An object of this class, say 'myCar' would be a specific car with its own color and model, and it can call methods like 'start_engine' and 'stop_engine' on itself."
+       ]
+   },
+   
+   {
+    
+    "tag": "constructor",
+     "patterns": [
+      "constructor",
+      "constructor."
+     ],
+     "responses": [
+      " A constructor is a special method in object-oriented programming that automatically initializes the attributes of an object when it is created, ensuring it starts in a valid state."
+     ]
+   },
+   
+   {
+    
+    "tag": "destructor",
+     "patterns": [
+      " destructor",
+      "destructor."
+     ],
+     "responses": [
+      " A destructor is a method in some programming languages used to clean up resources or perform finalization tasks when an object is no longer needed, typically when it goes out of scope or is explicitly deleted."
+     ]
+   },
+   
+   {
+    
+    "tag": "constructor and destructor",
+     "patterns": [
+      " Difference between constructor and destructor",
+      "constructor and destructor."
+     ],
+     "responses": [
+      "A constructor initializes an object when it's created, setting its initial state, while a destructor cleans up resources or performs finalization when the object is no longer needed or goes out of scope."
+     ]
+   },
+
+    
+   {
+    
+    "tag": "Method overloading",
+     "patterns": [
+      "Method overloading ",
+      " Method overloading."
+     ],
+     "responses": [
+      "Method overloading is a feature in object-oriented programming that allows a class to have multiple methods with the same name but different parameter lists, enabling the same method name to perform different actions based on the arguments provided."
+     ]
+   },
+    
+   {
+    
+    "tag": "Method overriding",
+     "patterns": [
+      "Method overriding ",
+      " Method overriding."
+     ],
+     "responses": [
+      "Method overriding is a concept in object-oriented programming where a subclass provides a specific implementation for a method that is already defined in its superclass."
+     ]
+   },
+  
+   {
+    
+    "tag": "Method overloading and overriding",
+     "patterns": [
+      "Method overloading and overriding.",
+      "Difference between method overloading and overriding."
+     ],
+     "responses": [
+      "Method overloading deals with multiple methods in the same class with different parameters, while overriding is about redefining a method in a subclass to provide specific implementation ."
+     ]
+   },
+   
+
+{
+      "tag": "types of inheritance",
+       "patterns": [
+        " types of inheritance",
+        "types of inheritance"
+       ],
+       "responses": [
+        "The different 6 types of Inheritance in java are: Single inheritance, Multi-level inheritance, Multiple inheritance, Multipath inheritance, Hierarchical Inheritance, Hybrid Inheritance. "
+       ]
+    },
+{
+      "tag": "method",
+       "patterns": [
+        " method",
+        "method"
+       ],
+       "responses": [
+        "A method is a function that is associated with an instance of a class or a static class. A 'method' is a particular type of member, described by MSDN as such: Methods define the actions that a class can perform. "
+       ]
+    },
+
+{
+      "tag": "instance",
+       "patterns": [
+        " instance",
+        "define instance"
+       ],
+       "responses": [
+        "In object-oriented programming (OOP), an instance is a specific realization of any object. An object may be different in several ways, and each realized variation of that object is an instance. The creation of a realized instance is called instantiation. "
+       ]
+    },
+
+{
+      "tag": "example for interface",
+       "patterns": [
+        "interface",
+        "define interface",
+        "Example for interface"
+       ],
+       "responses": [
+        "An interface is a description of the actions that an object can do... for example when you flip a light switch, the light goes on, you don't care how, just that it does. In Object Oriented Programming, an Interface is a description of all functions that an object must have in order to be an 'X'. "
+       ]
+    },
+
+
+
+{
+      "tag": "this keyword",
+       "patterns": [
+        "purpose of the 'this' keyword in Java",
+        "this keyword?"
+       ],
+       "responses": [
+        "The this keyword refers to the current object in a method or constructor. The most common use of the this keyword is to eliminate the confusion between class attributes and parameters with the same name. "
+       ]
+    },
+
+{
+      "tag": "disadvantages of Object-oriented programming",
+       "patterns": [
+        " the disadvantages of Object-oriented programming",
+        "disadvantages of Object-oriented programming"
+       ],
+       "responses": [
+        "Like all programming paradigms, however, OOP comes with its set of drawbacks in a Java development environment as well. These include a steeper learning curve, potential performance overhead, memory consumption, lower execution efficiency, and complex designs. "
+       ]
+    },
+{
+      "tag": "advantages of Object-oriented programming",
+       "patterns": [
+        " the advantages of Object-oriented programming",
+        "advantages of Object-oriented programming"
+       ],
+       "responses": [
+        "Benefits of Object-Oriented Programming are: Users can build programs from the standard modules that communicate with each other. This prevents writing the code again from scratch, which ultimately saves the development time of the code and therefore is higher productivity of the program."
+       ]
+    },
+
+{
+      "tag": "Types of constructor",
+       "patterns": [
+        "the Types of constructor",
+        "Types of constructor"
+       ],
+       "responses": [
+        "Types of constructors depend upon languages: Private Constructor, Default Constructor, Copy Constructor, Static Constructor, Parameterized Constructor "
+       ]
+    },
+
+{
+      "tag": "access modifiers",
+       "patterns": [
+        "access modifiers"
+       ],
+       "responses": [
+        "Access modifiers or access specifiers are the keywords in object-oriented languages.  It helps to set the accessibility of classes, methods, and other members. "
+       ]
+    },
+
+{
+      "tag": "hybrid inheritance",
+       "patterns": [
+        " hybrid inheritance",
+        " hybrid inheritance"
+       ],
+       "responses": [
+        "The type of inheritance formed by the combination of different types of inheritances like single, multiple inheritances, etc. is classified as hybrid inheritance. "
+       ]
+    },
+
+{
+      "tag": "hierarchical inheritance",
+       "patterns": [
+        "hierarchical inheritance",
+        " hierarchical inheritance"
+       ],
+       "responses": [
+        "In the case of a hierarchical inheritance, multiple subclasses inherit from a parent class. Hierarchical inheritance is a type of inheritance in which multiple classes are descended from a single parent or base class."
+       ]
+    },
+
+{
+      "tag": "Single inheritance",
+       "patterns": [
+        "Single inheritance",
+        "Single inheritance"
+       ],
+       "responses": [
+        "Single inheritance is one in which the derived class inherits the single base class either public, private, or protected access specifier. In single inheritance, the derived class uses the features or members of the single base class."
+       ]
+    },
+{
+      "tag": "Multilevel inheritance",
+       "patterns": [
+        " Multilevel inheritance",
+        "Multilevel inheritance"
+       ],
+       "responses": [
+        "The multi-level inheritance includes the involvement of at least two or more than two classes. One class inherits the features from a parent class and the newly created sub-class becomes the base class for another new class."
+       ]
+    },
+{
+      "tag": "Multiple inheritance",
+       "patterns": [
+        "Multiple inheritance",
+        " Multiple inheritance"
+       ],
+       "responses": [
+        "Multiple inheritance means that a subclass can inherit from two or more superclasses. C++ allows multiple inheritance, but Java allows only single inheritance, that is, a subclass can inherit only one superclass."
+       ]
+    },
+
+
+{
+      "tag": "superclass",
+       "patterns": [
+        " superclass"
+       ],
+       "responses": [
+        "A superclass is a class from which a subclass or child class is derived. Base class and parent class are other names for a superclass. "
+       ]
+    },
+
+{
+      "tag": "superclass example",
+       "patterns": [
+        " the example superclass"
+       ],
+       "responses": [
+        "if Student is a class derived from the Person class, then the Person class will be referred to as the superclass, A superclass or base class is also a class that works as a parent to some other class/ classes. For example, the Vehicle class is a superclass of class Bike."
+       ]
+    },
+
+{
+      "tag": "subclass",
+       "patterns": [
+        "subclass",
+        "define subclass"
+       ],
+       "responses": [
+        "A class that derives from another class is referred to as a subclass. A subclass inherits the properties of its ancestors or parent classes. For example, the class Bike is a subclass or a derivative of the Vehicle class. "
+       ]
+    },
+
+{
+      "tag": "abstract class",
+       "patterns": [
+        "abstract class",
+        "define abstract class"
+       ],
+       "responses": [
+        "An abstract class is also a class which is consists of abstract methods. These methods are basically declared but not defined and If these methods need to be used later in some subclass that time those methods have to be exclusively defined in the subclass. "
+       ]
+    },
+
+{
+      "tag": "data abstraction and encapsulation",
+       "patterns": [
+        "Differentiate between data abstraction and encapsulation.",
+        "data abstraction and encapsulation"
+       ],
+       "responses": [
+        "Abstraction is the method of hiding the unwanted information. Whereas encapsulation is a method to hide the data in a single entity or unit along with a method to protect information from outside. We can implement abstraction using abstract class and interfaces. "
+       ]
+    },
+{
+      "tag": "abstract class and an interface",
+       "patterns": [
+        "Differentiate between abstract class and an interface.",
+        "abstract class and an interface"
+       ],
+       "responses": [
+        "An interface can have only abstract methods, but an Abstract class can have abstract and non-abstract methods. The interface should be used if just the requirement specification is known and nothing about implementation. If the implementation is known, but partially, then an abstract class should be used. "
+       ]
+    },
+
+
+{
+      "tag": "class and a method",
+       "patterns": [
+        "Differentiate between class and a method.",
+        "class and a method"
+       ],
+       "responses": [
+        "A class is a blueprint of objects, and it consists of the properties and behaviour of the objects. Methods are programming constructs that perform specific tasks/behaviour. "
+       ]
+    },
+{
+      "tag": "class and structure",
+       "patterns": [
+        "Differentiate between class and structure.",
+        "class and structure"
+       ],
+       "responses": [
+        "Structures and classes differ in the following particulars: Structures are value types; classes are reference types. A variable of a structure type contains the structure's data, rather than containing a reference to the data as a class type does. Structures use stack allocation; classes use heap allocation."
+       ]
+    },
+
+{
+      "tag": "virtual functions",
+       "patterns": [
+        "virtual functions",
+        "define virtual functions"
+       ],
+       "responses": [
+        "Virtual functions are also part of the functions which are present in the parent class and they are overridden by the subclass. These functions help to achieve runtime polymorphism."
+       ]
+    },
+    
+{
+    "tag": "pure virtual functions",
+     "patterns": [
+      "pure virtual functions",
+      "define pure virtual functions"
+     ],
+     "responses": [
+      "A pure virtual function is only declared in the parent class. It is also referred to as an abstract function. Pure virtual functions do not contain any definition in the base class."
+     ]
+  },
+
+{
+      "tag": "exception handling",
+       "patterns": [
+        "exception handling",
+        "define exception handling"
+       ],
+       "responses": [
+        "Exception handling in Object-Oriented Programming is the most important concept. It is used to manage errors. An exception handler help to throw errors and then catch the error in order to solve them."
+       ]
+    },
+{
+      "tag": "copy constructor",
+       "patterns": [
+        "copy constructor",
+        "define copy constructor"
+       ],
+       "responses": [
+        "By copying the members of an existing object, the copy constructor initialises the members of a newly formed object. The argument for the copy constructor is a reference to an object of the same class. Programmers have the option of directly defining the copy constructor."
+       ]
+    },
+
+{
+      "tag": "default constructor",
+       "patterns": [
+        "default constructor",
+        "define default constructor"
+       ],
+       "responses": [
+        "A constructor without any arguments or with the default value for every argument is said to be the Default constructor. A constructor that has zero parameter list or in other sense, a constructor that accept no arguments is called a zero argument constructor or default constructor."
+       ]
+    },
+
+{
+      "tag": "access specifiers",
+       "patterns": [
+        "access specifiers",
+        "define access specifiers"
+       ],
+       "responses": [
+        " Access specifiers are the keywords in any programming language used to specify the Class’s, method’s, interface’s and variable’s behaviour concerning its accessibility. The access specifiers in C++ Programming are public, private, and protected."
+       ]
+    },
+
+{
+      "tag": "levels of data abstraction",
+       "patterns": [
+        "the levels of data abstraction",
+        "levels of data abstraction"
+       ],
+       "responses": [
+        " There are three levels of abstraction  Physical Level: Defines how the data is actually stored employing various data structures. level: Describes the relationship which exists among the stored data. View level: Provides a high-level view of a section of data."
+       ]
+    },
+
+
+{
+      "tag": "Example for Hierarchical inheritance",
+       "patterns": [
+        "example of a Hierarchical inheritance",
+        "real examples of Hierarchical inheritance"
+       ],
+       "responses": [
+        "In hierarchical inheritance, all features that are common in child classes are included in the base class. For example, Physics, Chemistry, Biology are derived from Science class. Similarly, Dog, Cat, Horse are derived from Animal class."
+       ]
+    },
+
+{
+      "tag": "Example for Hybrid inheritance",
+       "patterns": [
+        "example of a Hybrid inheritance",
+        " real time examples of Hybrid inheritance"
+       ],
+       "responses": [
+        "If we talk about the Ferrari, that is a combination of the racing car and a normal car. So class Ferrari is derived from the class Car and Class Racing. Hence, the above example is a single and multiple inheritance. It is a perfect example of hybrid inheritance (single + multiple).-"
+       ]
+    },
+
+
+
+{
+      "tag": "Example for Single inheritance",
+       "patterns": [
+        "example of a single inheritance",
+        " real time examples of single inheritance"
+       ],
+       "responses": [
+        "Here are some examples of single inheritance in Java programming: Animal and Dog classes: In this example, the Animal class is the superclass, and the Dog class is the subclass. The Dog class inherits properties and methods from the Animal class, such as the eat() method."
+       ]
+    },
+{
+      "tag": "Example for Multi level inheritance",
+       "patterns": [
+        " example of a multi level inheritance",
+        " real time examples of multi level inheritance"
+       ],
+       "responses": [
+        "For example, if we take Grandfather as a base class then Father is the derived class that has features of Grandfather and then Child is the also derived class that is derived from the sub-class Father which inherits all the features of Father."
+       ]
+    },
+
+
+{
+      "tag": "Example for Multiple inheritance",
+       "patterns": [
+        " an example of a multiple inheritance",
+        " real examples of multiple inheritance"
+       ],
+       "responses": [
+        "In C++ programming, a class can be derived from more than one parent. For example, A class Bat is derived from base classes Mammal and WingedAnimal . It makes sense because bat is a mammal as well as a winged animal."
+       ]
+    },
+
+    {
+        "tag": "types of Polymorphism",
+         "patterns": [
+          " the different types of Polymorphism",
+          "different types of Polymorphism"
+         ],
+         "responses": [
+          "Polymorphism can be classified into two types based on the time when the call to the object or function is resolved. They are as follows: Compile Time Polymorphism  and Runtime Polymorphism"
+         ]
+      },
+      {
+        "tag": "limitations on Inheritance",
+         "patterns": [
+          "the limitations on Inheritance",
+          "limitations on Inheritance"
+         ],
+         "responses": [
+          "Main disadvantage of using inheritance is that the two classes (parent and child class) gets tightly coupled. it will affect to all the child classes which is inheriting/deriving the parent class, and hence, it cannot be independent of each other."
+         ]
+      },
+
+      {
+        "tag": "Structure",
+         "patterns": [
+          "structure",
+          "define structure"
+         ],
+         "responses": [
+          "Structure is a collection of variables of different data types under a single name. It is similar to a class in that, both holds a collecion of data of different data types. "
+         ]
+      },
+      
+      {
+        "tag": "Example for Structure",
+         "patterns": [
+          "Example for structure"
+         ],
+         "responses": [
+          "Structure is a collection of variables of different data types under a single name. For example: You want to store some information about a person: his/her name, citizenship number and salary."
+         ]
+      },
+      {
+        "tag": "multiple and multi-level inheritances ",
+         "patterns": [
+          "Difference between multiple and multi-level inheritances ",
+          "Distinguish between multiple and multi-level inheritances "
+         ],
+         "responses": [
+          "In the case of the multiple inheritance, a class inherits more than one parent class. In contrast, multi-level inheritance means that class inherits from another class, which is a subclass of some other parent class."
+         ]
+      },
+      {
+        "tag": "static polymorphism ",
+         "patterns": [
+          "static polymorphism"
+         ],
+         "responses": [
+          "The static polymorphism or static binding allows us to link a function with objects during compilation. It can be implemented by method overloading of operator overloading. "
+         ]
+      },
+
+      {
+        "tag": "dynamic polymorphism",
+         "patterns": [
+          " dynamic polymorphism"
+         ],
+         "responses": [
+          "A dynamic polymorphism or dynamic binding allows for a call to an overridden method at the run time.  dynamic polymorphism happens among different classes as opposed to static polymorphism "
+         ]
+      }
+  ]
+}

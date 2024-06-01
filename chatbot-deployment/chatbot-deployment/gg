@@ -1,0 +1,34 @@
+def get_response(msg):
+    sentence = tokenize(msg)
+
+    # Calculate sentence embeddings
+    with torch.no_grad():
+        inputs = tokenizer(sentence, return_tensors="pt", padding=True, truncation=True, max_length=512).to(device)
+        embeddings = bert_model(**inputs).pooler_output
+        embeddings = embeddings.cpu().numpy()
+
+    # Ensure that X and embeddings have the same number of features
+    X = embeddings
+
+    output = model(X)
+    _, predicted = torch.max(output, dim=1)
+
+    tag = tags[predicted.item()]
+
+    probs = torch.softmax(output, dim=1)
+    prob = probs[0][predicted.item()]
+
+    # Check if cosine similarity is above a threshold (e.g., 0.85)
+    if prob.item() > 0.85:
+        # Calculate cosine similarity between user input and known patterns
+        similarities = cosine_similarity(embeddings, X)
+
+        # Find the most similar pattern
+        most_similar_idx = np.argmax(similarities)
+        tag = tags[most_similar_idx]
+
+        for intent in intents['intents']:
+            if tag == intent["tag"]:
+                return random.choice(intent['responses'])
+
+    return "Sorry, I don't understand..."
